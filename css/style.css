@@ -1,0 +1,326 @@
+/* Style CSS file
+ * Author: Benjamin Yee
+ * Contributor: Brad Traversy
+ *
+ */
+
+body{
+  font-family:'Open-sans', sans-serif;
+  font-size:17px;
+  line-height:1.5em;
+  margin:0;
+  padding:0;
+}
+
+img{
+  width:100%;
+}
+
+.container{
+  margin:auto;
+}
+
+/* COMMON CLASSES */
+
+.disclaimer {
+  color: red;
+  font-weight: bold;
+}
+
+.policy-head {
+  text-align: center;
+}
+.primary-text {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color:#56a79a;
+}
+
+.primary-background{
+  background:#56a79a;
+}
+
+.catalog-text {
+  font-family: 'Roboto', sans-serif;
+  color:#56a79a;
+}
+
+.footlinks, .logolink {
+  text-decoration: none;
+  color: white;
+}
+
+a.footlinks:hover {
+  text-decoration: underline;
+}
+
+.fa-tags {
+	color: green;
+}
+
+.headline
+{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: darkgray;
+}
+
+img.factory
+ {
+  height: 340px;
+  width: 500px;
+}
+
+h2.privacy {
+  text-align: center;
+}
+
+.secure
+{
+  color: green;
+}
+
+/* HEADER */
+#main-header{
+  border-bottom:1px solid #25254B;
+  background-color:#25254B;
+}
+
+#main-header h1,
+#main-header i
+{
+  color: white;
+}
+
+
+/* NAVBAR */
+#navbar{
+  font-family: Arial,sans-serif;
+}
+
+#navbar li{
+  display:inline;
+  padding-right:20px;
+  list-style:none;
+}
+
+#navbar a{
+  text-decoration:none;
+  color:#888;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color:#56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom:3px;
+}
+
+#navbar a:visited {
+  color: white;
+}
+
+/* SHOWCASE */
+#showcase{
+  background:url('../images/showcase.jpg') no-repeat center center;
+  border-bottom:1px solid #56a79a;
+  margin-bottom:30px;
+}
+
+#showcase .row{
+  height:275px;
+}
+
+#showcase h1{
+  font-size: 3em;
+  margin:0;
+  padding-bottom:7px;
+}
+
+#showcase p {
+  color:#ccc;
+  margin:0.4em;
+}
+
+#showcase .showcase-content{
+  background:#333;
+  color: white;
+  border-radius:60px;
+  padding:23px;
+  opacity:0.7;
+}
+
+
+/*  CATALOG  */
+#catalog img.catalog-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  flex-basis: auto;
+	padding: .4em;
+}
+
+#catalog.container {
+	display: flex;
+}
+
+#catalog h2 {
+	margin: .5em 0 .5em 0;
+	color: #56a79a;
+	font-size: 1.4em;
+}
+
+#catalog h2.sale {
+  color: red;
+}
+
+#catalog h3 {
+	font-size: 1em;
+	margin: 0;
+	background-color: #e6e6e6;
+	color: #2f4f4f;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+#catalog p.description {
+	margin: 0 auto 0 2em;
+	line-height: 1.2em;
+	text-align:center;
+	color: #2f4f4f;
+}
+
+#catalog button[type="submit"] {
+	padding: .5em 2em;
+	background-color: #56a79a;
+	color: white;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+
+/* COMPANY */
+#company{
+  background:#3D4853;
+  color: white;
+  padding:10px 0;
+}
+
+#company h4{
+  text-transform: none;
+  margin-bottom:0;
+}
+
+/* Underlines current privacy policy page */
+#company h4.privacy a{
+  color: white;
+  text-decoration: underline;
+}
+
+#company ul{
+  padding:0;
+  list-style:none;
+  line-height:2em;
+}
+
+#company input[type="text"]{
+  padding:7px;
+}
+
+#company button{
+  background:#222;
+  color: white;
+  padding:10px;
+  border:0;
+}
+
+/* FOOTERS */
+#main-footer{
+  background:#059DC1;
+  color:white;
+}
+
+#credits {
+  background:white;
+  color: black;
+}
+
+#credits h5 {
+  margin: 0;
+}
+#credits p {
+  margin: 0;
+}
+
+/* PAGE */
+#page {
+  margin-bottom:40px;
+}
+
+/* CONTACT */
+.contact form{
+  background:maroon;
+  color: white;
+  padding:20px;
+}
+
+.contact form input[type="text"]{
+  width:50%;
+  height:30px;
+  margin-bottom:10px;
+}
+
+.contact form textarea{
+  width:50%;
+  height:250px;
+}
+
+.contact form button{
+  width:50%;
+  padding:10px 0;
+  border:0;
+  background:#DAA520;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:800px){
+  #showcase h1{
+    font-size:30px;
+  }
+}
+
+@media(max-width:500px){
+  #showcase .showcase-content{
+    padding:40px 10px;
+  }
+}
+
+@media(min-width:770px) {
+	.catalog-item {}
+}
+
+/* Add iPhone 6,7,8 in portrait and landscape media screen */
+			@media only screen
+				and (min-device-width : 375px)
+				and (max-device-width : 667px)
+				{
+
+                #main-header, #navbar, #showcase, #catalog, #company, #footer
+                {
+                    float: none;
+                    width: 100%;
+                    border-right: none;
+                }
+
+				}
+
+		    /* Samsung Galaxy S8 */
+			@media only screen and (min-width: 360px) and and (max-width: 767px) {
+                #main-header, #navbar, #showcase, #catalog, #company, #footer
+                {
+                    width: 100%;
+					          float: none;
+                    border-right: none;
+                }
+
+				}
+		      }
