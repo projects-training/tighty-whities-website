@@ -7,4 +7,4 @@ Special thanks to Brad at [Traversy Media](http://www.traversymedia.com) for his
 
 I would also like to thank the staff assistant at Framework TV for his supportive feedback on this project. 
 
-Final website can be viewed here: https://stmapman7.github.io/tighty-whities-website/ 
+Final website can be viewed here: https://projects-training.github.io/tighty-whities-website/
