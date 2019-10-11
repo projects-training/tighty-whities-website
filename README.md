@@ -10,3 +10,5 @@ I would also like to thank the staff assistant at Framework TV for his supportiv
 Final website can be viewed here: https://projects-training.github.io/tighty-whities-website/
 
 Note: This is the branch deployed to Netlify.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/984a387c-b490-4e1d-b7f2-d3ffc04880fb/deploy-status)](https://app.netlify.com/sites/upbeat-nightingale-9eac2b/deploys)
