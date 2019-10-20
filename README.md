@@ -1,5 +1,5 @@
 # tighty-whities-website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/984a387c-b490-4e1d-b7f2-d3ffc04880fb/deploy-status)](https://app.netlify.com/sites/upbeat-nightingale-9eac2b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/984a387c-b490-4e1d-b7f2-d3ffc04880fb/deploy-status)](https://tighty-whities.netlify.com/)
 
 Tighty Whities Website - Final Project from Framework TV's HTML5 Authoring Course
 
