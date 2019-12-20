@@ -1,0 +1,351 @@
+/* SASS (SCSS) file
+ * Author: Benjamin Yee
+ * My first attempt to use Sass with Flexbox Grid but currently does not
+ * work with the rows.
+ * This will be revised and fixed in the future while learning advanced
+ * CSS and SASS.
+ */
+
+/* Variables - text */
+$alert: red;
+$primary: #56a79a;
+$footer: white;
+$main_footer: #059DC1;
+$secure: green;
+$headline: darkgray;
+$links: #888;
+$paragraphs: #ccc;
+$catalog: #2f4f4f;
+$credits: black;
+
+/* Variables - fonts */
+$body: 'Open-sans', sans-serif;
+$main: 'PT Sans Narrow', sans-serif;
+$catalog_font: 'Roboto', sans-serif;
+$headline_font: 'Lato', sans-serif;
+$navigation: Arial, sans-serif;
+
+/* Variables - headings & buttons */
+$main_header: #25254B;
+$catalog_heading: #e6e6e6;
+$button: #56a79a;
+$showcase: #333;
+$company: #3D4853;
+$company_button: #222;
+$contact: maroon;
+$contact_button: #DAA520;
+
+body {
+  font-family: $body;
+  font-size:17px;
+  line-height:1.5em;
+  margin:0;
+  padding:0;
+}
+
+img {
+  width:100%;
+}
+
+.container{
+  margin:auto;
+}
+
+/* COMMON CLASSES */
+
+.disclaimer {
+  color: $alert;
+  font-weight: bold;
+}
+
+.policy-head {
+  text-align: center;
+}
+
+.primary-text {
+  font-family: $main;
+  color:$primary;
+}
+
+.primary-background{
+  background:$primary;
+}
+
+.catalog-text {
+  font-family: $catalog_font;
+  color:$primary;
+}
+
+.footlinks, .logolink {
+  text-decoration: none;
+  color: $footer;
+}
+
+a.footlinks:hover {
+  text-decoration: underline;
+}
+
+.fa-tags {
+	color: $secure;
+}
+
+.headline
+{
+  font-family: $headline_font;
+  text-align: center;
+  color: $headline;
+}
+
+img.factory
+ {
+  height: 340px;
+  width: 500px;
+}
+
+h2.privacy {
+  text-align: center;
+}
+
+.secure
+{
+  color: $secure;
+}
+
+/* HEADER */
+
+#main-header {
+  border-bottom:1px solid $main_header;
+  background-color:$main_header;
+
+  h1, i
+  {
+    color: $footer;
+  }
+}
+
+/* NAVBAR */
+
+#navbar {
+  font-family: $navigation;
+
+ li {
+  display:inline;
+  padding-right:20px;
+  list-style:none;
+   }
+
+ a {
+  text-decoration:none;
+  color:$links;
+
+  li {
+    .current, :hover {
+     color:$button;
+     border-bottom: 3px solid $button;
+     padding-bottom:3px;
+      }
+  }
+  :visited {
+    color: $footer;
+  }
+    }
+}
+
+/* SHOWCASE */
+
+#showcase {
+  background:url('../images/showcase.jpg') no-repeat center center;
+  border-bottom:1px solid $button;
+  margin-bottom:30px;
+
+  .row {
+   height:275px;
+    }
+
+    h1 {
+     font-size: 3em;
+     margin:0;
+     padding-bottom:7px;
+   }
+
+   p {
+    color:$paragraphs;
+    margin:0.4em;
+    }
+
+    .showcase-content {
+     background:$showcase;
+     color: $footer;
+     border-radius:60px;
+     padding:23px;
+     opacity:0.7;
+   }
+}
+
+/*  CATALOG  */
+
+#catalog {
+
+  img.catalog-item {
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+    flex-basis: auto;
+  	padding: .4em;
+  }
+
+  .container {
+  	display: flex;
+  }
+
+  h2 {
+  	margin: .5em 0 .5em 0;
+  	color: $primary;
+  	font-size: 1.4em;
+  }
+
+  h2.sale {
+    color: $alert;
+  }
+
+  h3 {
+  	font-size: 1em;
+  	margin: 0;
+  	background-color: $catalog_heading;
+  	color: $catalog;
+  	padding: 0;
+  	text-transform: uppercase;
+  }
+
+  p.description {
+  	margin: 0 auto 0 2em;
+  	line-height: 1.2em;
+  	text-align:center;
+  	color: $catalog;
+  }
+
+  button[type="submit"] {
+   padding: .5em 2em;
+   background-color: $button;
+   color: $footer;
+   font-size: 1.3em;
+   cursor: pointer;
+ }
+
+}
+
+/* COMPANY */
+#company {
+  background: $company;
+  color: $footer;
+  padding:10px 0;
+
+/* Underlines current privacy policy page */
+  h4 {
+    text-transform: none;
+    margin-bottom:0;
+
+    .privacy a
+    {
+     color: $footer;
+     text-decoration: underline;
+    }
+
+  }
+
+  ul {
+    padding:0;
+    list-style:none;
+    line-height:2em;
+  }
+
+  input[type="text"]{
+    padding:7px;
+  }
+
+  button {
+    background:$company_button;
+    color: $footer;
+    padding:10px;
+    border:0;
+  }
+
+}
+
+/* FOOTERS */
+#main-footer{
+  background:$main_footer;
+  color:$footer;
+}
+
+#credits {
+  background:$footer;
+  color: $credits;
+
+  h5, p {
+    margin: 0;
+  }
+}
+
+/* PAGE */
+#page {
+  margin-bottom:40px;
+}
+
+/* CONTACT */
+
+.contact {
+  form {
+    background: $contact;
+    color: $footer;
+    padding:20px;
+  }
+
+  form input[type="text"]{
+    width:50%;
+    height:30px;
+    margin-bottom:10px;
+  }
+
+  form textarea{
+    width:50%;
+    height:250px;
+  }
+
+  form button{
+    width:50%;
+    padding:10px 0;
+    border:0;
+    background:$contact_button;
+    color: $footer;
+  }
+}
+
+/* MEDIA QUERIES */
+@media(max-width:800px){
+  #showcase h1{
+    font-size:30px;
+  }
+}
+
+/* Add iPhone 6,7,8 in portrait and landscape media screen */
+@media(max-width:500px){
+  #showcase .showcase-content{
+    padding:40px 10px;
+  }
+}
+
+@media(min-width:770px) {
+	.catalog-item {}
+}
+
+/* Samsung Galaxy S8 */
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+                #main-header, #navbar, #showcase, #catalog, #company, #footer
+                {
+                    width: 100%;
+					          float: none;
+                    border-right: none;
+                }
+
+				}
